@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <style type=text/css>
+        body {
+            height: 125vh;
+            margin-top: 80px;
+            padding: 30px;
+            background-size: cover;
+            font-family: sans-serif;
+        }
+
+        header {
+            background-color: rgb(33, 59, 208);
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 5px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 0 25px 0 black;
+        }
+
+        header * {
+            display: inline;
+        }
+
+        header li {
+            margin: 20px;
+        }
+
+        header li a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+    </style>
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(33, 59, 208);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: rgb(255, 255, 255);
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: rgb(0, 0, 0);
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            left: 0px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+    </style>
+
+</head>
+
+<body style="background:rgb(98, 192, 255)">
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a>
+        <a href="https://hz.nl/over-de-hz/regelingen-documenten-1/onderwijs-en-examenregelingen"
+            target="_blank">onderwijs en- examenregelingen</a>
+        <a href="#">Services</a>
+        <a href="https://glaze-donut-5a5.notion.site/Assignment-Specification-661c5ac5d7494328a58be61d00dd41e4"
+            target="_blank">Opdrachtspecificaties</a>
+        <a href="https://hz.osiris-student.nl/#/home">Studievoortgang</a>
+        <a href="https://github.com/HZ-HBO-ICT" target="_blank">Github HZ</a>
+    </div>
+
+
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; zijmenu</span>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "300px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="file:///C:/Users/gamer/Desktop/documentroot/Personalwebsite/index.html" style="color:white;"> Home </a>
+                </li>
+                <li>
+                    <a href="file:///C:/Users/gamer/Desktop/documentroot/Personalwebsite/profilewebsite.html" style="color:white;"> profile
+                    </a>
+                </li>
+                <li>
+                    <a href="file:///C:/Users/gamer/Desktop/documentroot/Personalwebsite/dashboardwebsite.html" style="color:white;">
+                        dashboard </a>
+                </li>
+                <li> <a href="file:///C:/Users/gamer/Desktop/documentroot/Personalwebsite/faqwebsite.html" style="color:white;"> FAQ </a>
+                </li>
+                <li>
+                    <a href="file:///C:/Users/gamer/Desktop/documentroot/Personalwebsite/blogwebsite.html" style="color:white;"> blog </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>FAQ</h1>
+        <h2>Vragen</h2>
+        <ol>
+            <li>Hoe kan je een document van je laptop printen op HZ?</li>
+            <li>Hoe kan je een document scannen en naar je laptop sturen op HZ?</li>
+            <li>Hoe kan ik iets kopen op de HZ web shop?</li>
+            <li>Waar kan ik de laatste instructies vinden over
+                wat je moet doen als je ziek bent/symptomen van COVID hebt?
+            </li>
+            <li>Hoe kan ik projectruimte boeken in een van de hallen?</li>
+            <li>Wat zijn de instructies als je je auto wilt parkeren bij de HZ parkeerplaats</li>
+        </ol>
+        <h2>Antwoorden</h2>
+        <ol>
+            <li><b>Zorg dat je je studentenpas bijhebt met printtegoed erop, loop naar de printer, scan je studentenpas,
+                    selecteer met je laptop het onderdeel dat je wilt printen en druk op de print-knop
+                </b></li>
+            <li><b>Loop naar de scanner, leg je document op de scanner en stuur het naar je laptop</b></li>
+            <li><b>ga naar <a
+                        href="https://webshop.hz.nl/webshopapp/defaulten.aspx?menu=082076044027019251066025111065201099237062130097"
+                        target="_blank">Webshop HZ</a></b></li>
+            <li><b>Bij <a href="https://hz.nl/actualiteiten/coronavirus"
+                        target="_blank">hz.nl/actualiteiten/coronavirus</a> </b></li>
+            <li><b>Bij de receptie</b></li>
+            <li><b>Regel een parkeerticket met je studentenpas</b></li>
+        </ol>
+    </section>
+</body>
+
+</html>

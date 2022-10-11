@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <style type=text/css>
+        body {
+            height: 125vh;
+            margin-top: 80px;
+            padding: 30px;
+            background-size: cover;
+            font-family: sans-serif;
+        }
+
+        header {
+            background-color: rgb(33, 59, 208);
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 5px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 0 25px 0 black;
+        }
+
+        header * {
+            display: inline;
+        }
+
+        header li {
+            margin: 20px;
+        }
+
+        header li a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+    </style>
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(33, 59, 208);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: rgb(255, 255, 255);
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: rgb(0, 0, 0);
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            left: 0px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+    </style>
+
+</head>
+
+<body style="background:rgb(98, 192, 255)">
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a>
+        <a href="https://hz.nl/over-de-hz/regelingen-documenten-1/onderwijs-en-examenregelingen"
+            target="_blank">onderwijs en- examenregelingen</a>
+        <a href="#">Services</a>
+        <a href="https://glaze-donut-5a5.notion.site/Assignment-Specification-661c5ac5d7494328a58be61d00dd41e4"
+            target="_blank">Opdrachtspecificaties</a>
+        <a href="https://hz.osiris-student.nl/#/home">Studievoortgang</a>
+        <a href="https://github.com/HZ-HBO-ICT" target="_blank">Github HZ</a>
+    </div>
+
+
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; zijmenu</span>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "300px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <header>
+        <nav>
+
+            <ul>
+                <li>
+                    <a href="file:///C:/Users/gamer/Desktop/documentroot/Personalwebsite/index.html" style="color:white;"> Home </a>
+                </li>
+                <li>
+                    <a href="file:///C:/Users/gamer/Desktop/documentroot/Personalwebsite/profilewebsite.html" style="color:white;"> profile
+                    </a>
+                </li>
+                <li>
+                    <a href="file:///C:/Users/gamer/Desktop/documentroot/Personalwebsite/dashboardwebsite.html" style="color:white;">
+                        dashboard </a>
+                </li>
+                <li> <a href="file:///C:/Users/gamer/Desktop/documentroot/Personalwebsite/faqwebsite.html" style="color:white;"> FAQ </a>
+                </li>
+                <li>
+                    <a href="file:///C:/Users/gamer/Desktop/documentroot/Personalwebsite/blogwebsite.html" style="color:white;"> blog </a>
+                </li>
+            </ul>
+    </header>
+    <section>
+        <style>
+            table,
+            th,
+            td {
+                border: 1px solid rgb(0, 2, 142);
+            }
+        </style>
+
+
+        <h2>Dashboard</h2>
+
+        <table style="width:30%">
+            <caption>Alle toetsen van het jaar</caption>
+            <tr>
+                <th>Kwart</th>
+                <th>Cursus</th>
+                <th>EC</th>
+                <th>Toetsing</th>
+                <th>Cijfer</th>
+              </tr>
+              <tr>
+                <td rowspan="3">Kwart 1</td>
+                <td>Program and career Orientation</td>
+                <td>2.5</td>
+                <td>beoordeling</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Computer Science Basics</td>
+                <td>5</td>
+                <td>geschreven examen</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Programmig Basics</td>
+                <td>5</td>
+                <td>Case study</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Object Oriented Programming</td>
+                <td rowspan="2">10</td>
+                <td>Case study(50%)</td>
+                <td>project(50%)</td>
+              </tr>
+        </table>
+
+        <p>Dit tabel concludeert (hoop ik) alle toetsen van dit jaar</p>
+
+
+    </section>
+</body>
+
+</html>
